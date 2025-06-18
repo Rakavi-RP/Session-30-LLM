@@ -36,14 +36,14 @@ Cell 10: Production training loop with EBS storage
 - **Batch Size**: 1 (effective: 16 with gradient accumulation)
 - **Sequence Length**: 2048 tokens
 - **Target**: 300,000 steps (3 epochs)
-- **Current Progress**: 27,000 steps completed
+- **Trained Steps**: 27,000 steps 
 - **Learning Rate**: 3e-5 (cosine schedule, 2% warmup)
 
 ## Training Progress
 - **Loss Trend**: From ~11.0 to ~3.3 (see [training_loss.md](training_loss.md))
 - **Detailed Logs**: Average loss every 50 steps (see [ec2_logs.md](ec2_logs.md))
 - **Checkpoints**: Saved every 200 steps to EBS storage
-- **Status**: Training successfully running on EC2
+- **Status**: Training completed successfully on EC2
 
 ## Features
 ✅ **Auto-Resume** - Continues from latest checkpoint  
